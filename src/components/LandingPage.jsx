@@ -19,9 +19,9 @@ const LandingPage = () => {
                             I specialize in building efficient, scalable, and user-friendly web applications.
                         </p>
 
-                        <button className='bg-[#c72cb6] px-10 text-black font-medium rounded-xl py-1 text-center cursor-pointer mt-5'><a href="#project">Project</a></button>
+                        <button className='bg-[#c72cb6] px-10 text-white font-medium rounded-xl py-1 text-center cursor-pointer mt-5'><a href="#project">Project</a></button>
                         <button className='bg-black/30 px-10 rounded-xl py-1 text-center mx-5 cursor-pointer'><a href="https://www.canva.com/design/DAGjH0iDK8s/aWvk8Cg9LadwsEO3aQYVCg/view?utm_content=DAGjH0iDK8s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7a0a57babb">Resume</a></button>
-                        <button className='bg-[#c72cb6] px-10 text-black font-medium rounded-xl py-1 text-center cursor-pointer mt-5'><a href="https://abhishekportpholio.netlify.app/">First Portfolio</a></button>
+                        <button className='bg-[#c72cb6] px-10 text-white font-medium rounded-xl py-1 text-center cursor-pointer mt-5'><a href="https://abhishekportpholio.netlify.app/">First Portfolio</a></button>
 
                         <div className="flex  gap-8 mt-8 text-2xl text-[#d01968]">
                             <a href="www.linkedin.com/in/abhishek-softweredeveloper" target="_blank" rel="noopener noreferrer">
