@@ -29,7 +29,7 @@ const Experience = () => {
         {/* Header Row */}
         <div className="flex items-center justify-between mb-2">
           <h3 className="text-2xl font-semibold text-white flex items-center gap-2">
-            <FaBriefcase className="text-purple-400" /> Software Developer Intern
+            <FaBriefcase className="text-purple-400" /> Full Stack Developer Intern
           </h3>
           <span className="text-xs bg-green-600 text-white px-2 py-1 rounded-full">
             🟢 Currently Working
@@ -38,7 +38,7 @@ const Experience = () => {
 
         {/* Company & Duration */}
         <div className="text-sm text-purple-300 mb-1">
-          XYZ Corp • Remote • Feb 2025 – Present
+          HCL GUVI • Remote • June 2025 – Present
         </div>
 
         {/* Description */}
