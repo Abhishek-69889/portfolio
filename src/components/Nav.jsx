@@ -10,7 +10,7 @@ const Nav = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav className="px-4 mt-5 sm:px-6 lg:px-8 mx-auto max-w-screen-md fixed top-0 left-0 right-0 z-50 rounded-2xl bg-black/70 border-2 border-pink-500/30 transition-colors duration-300">
+    <nav className="px-4 mt-5 sm:px-6 lg:px-8 mx-auto max-w-screen-md fixed top-0 left-0 right-0 z-50 rounded-2xl bg-black/40 border-2 border-pink-500/30 transition-colors duration-300">
       <div className="flex items-center justify-between py-3">
         {/* Logo */}
         <a href="/" className="flex items-center">
