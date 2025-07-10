@@ -1,4 +1,4 @@
-// components/AnimatedSection.jsx
+
 import { motion } from "framer-motion";
 
 const fadeInVariant = {

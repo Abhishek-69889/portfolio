@@ -24,7 +24,10 @@ const achievements = [
       "Solved 250+ DSA problems on platforms like LeetCode and GeeksforGeeks, strengthening core algorithmic skills.",
     links: [
       { label: "LeetCode", url: "https://leetcode.com/u/abhishek_69889/" },
-      { label: "GFG", url: "https://www.geeksforgeeks.org/user/abhit99mh/?_gl=1*6rxpuc*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwsJO4BhDoARIsADDv4vC_7dcIF-kmEgingTm2fkUawLvSDJcqyMX1xRjbxB2f6pOZacDCcsIaAsJBEALw_wcB" },
+      {
+        label: "GFG",
+        url: "https://www.geeksforgeeks.org/user/abhit99mh/?_gl=1*6rxpuc*_up*MQ..*_gs*MQ..&gclid=Cj0KCQjwsJO4BhDoARIsADDv4vC_7dcIF-kmEgingTm2fkUawLvSDJcqyMX1xRjbxB2f6pOZacDCcsIaAsJBEALw_wcB",
+      },
     ],
   },
   {
@@ -47,11 +50,12 @@ const achievements = [
   },
 ];
 
-
-
 const Achievements = () => {
   return (
-    <section id="achievement" className="text-white py-20 px-6 font-sans no-scrollbar">
+    <section
+      id="achievement"
+      className="text-white py-20 px-0 sm:px-6 font-sans no-scrollbar"
+    >
       {/* Header */}
       <div className="max-w-5xl mx-auto text-center mb-14">
         <h2 className="text-4xl font-bold mb-3">My Achievements</h2>
@@ -62,13 +66,11 @@ const Achievements = () => {
       </div>
 
       {/* Scrollable Cards */}
-      <div
-        className="m-15 flex gap-6 overflow-x-auto px-6 scroll-smooth services_scrollbar" 
-      >
+      <div className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory services_scrollbar px-4 sm:px-6">
         {achievements.map((item, idx) => (
           <div
             key={idx}
-            className={`bg-[#1f0032] inline-block align-top text-center p-6 rounded-2xl w-[280px] shrink-0
+            className={`bg-[#1f0032] inline-block align-top text-center p-6 rounded-2xl w-[280px] shrink-0 snap-start
               ${
                 idx === 1
                   ? "bg-purple-700 border-2 border-purple-300 shadow-xl"
@@ -78,32 +80,33 @@ const Achievements = () => {
             <div className="mb-4 text-purple-300">{item.icon}</div>
             <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
             <p className="text-gray-300 text-sm">{item.description}</p>
-            {item.button && (
-  <a
-    href={item.button.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-purple-500 hover:bg-purple-600 text-white px-3 py-1 rounded-md text-sm font-medium"
-  >
-    {item.button.label}
-  </a>
-)}
 
-{item.links && (
-  <div className="flex justify-center gap-3 mt-2">
-    {item.links.map((link, i) => (
-      <a
-        key={i}
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm text-purple-300 underline hover:text-purple-400"
-      >
-        {link.label}
-      </a>
-    ))}
-  </div>
-)}
+            {item.button && (
+              <a
+                href={item.button.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-purple-500 hover:bg-purple-600 text-white px-3 py-1 rounded-md text-sm font-medium mt-3"
+              >
+                {item.button.label}
+              </a>
+            )}
+
+            {item.links && (
+              <div className="flex justify-center gap-3 mt-3">
+                {item.links.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-purple-300 underline hover:text-purple-400"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>

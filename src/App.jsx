@@ -12,6 +12,7 @@ const Projects = lazy(() => import('./components/Projects'));
 const Achievements = lazy(() => import('./components/Achievemts'));
 const Contact = lazy(() => import('./components/Contact'));
 const Experience = lazy(() => import('./components/Experience'));
+const CurrentWork = lazy(() => import('./components/CurrentWork'));
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ const App = () => {
         <AnimatedSection><About /></AnimatedSection>
         <AnimatedSection><Experience /></AnimatedSection>
         <AnimatedSection><Services /></AnimatedSection>
+        <AnimatedSection><CurrentWork /></AnimatedSection>
         <AnimatedSection><Projects /></AnimatedSection>
         <AnimatedSection><Achievements /></AnimatedSection>
         <AnimatedSection><Contact /></AnimatedSection>
